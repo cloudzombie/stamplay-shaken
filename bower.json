@@ -1,0 +1,25 @@
+{
+  "name": "tutsplus",
+  "version": "0.0.0",
+  "authors": [
+    "Alessandro Oliveri <alessandro.oliveri@gmail.com>"
+  ],
+  "description": "tutplus stamplay demo",
+  "main": "main.js",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "angular-stamplay": "*",
+    "stamplay-sdk": "~1.2.8",
+    "angular-route": "~1.4.3"
+  }
+}

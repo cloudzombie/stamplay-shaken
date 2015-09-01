@@ -1,0 +1,59 @@
+	<section id="banner" class="profile">
+		<i class="icon fa fa-user"></i>
+		<p>Manage your subscriptions</p>
+	</section>
+
+	<section id="user-form" class="wrapper style2 special">
+		<div class="inner">
+
+				<div class="container">
+					<div class="row uniform 50%">
+						<div class="12u$">
+							<h3>Personal data</h3>
+						</div>
+						<div class="6u 12u$(xsmall)">
+							<input name="firstname" placeholder="First name" type="text" value="{{profile.user.get('name').givenName}}"/>
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<input name="familyname" placeholder="Family Name" type="text" value="{{profile.user.get('name').familyName}}"/>
+						</div>
+						<div class="12u$">
+							<input name="email" placeholder="Email" type="text" value="{{profile.user.get('email')}}"/>
+						</div>		
+						<div class="12u$">
+							<h3>My Subscriptions</h3>
+						</div>
+						<div ng-repeat="item in profile.user.get('subscriptions')" class="row 12u">
+							<div class="9u">
+								<input name="planname" placeholder="Plan name" type="text" value="{{item.plan.name}}" disabled="disabled">
+							</div>
+							<div class="3u">
+								<input type="submit" class="delete" value="Unsubscribe" ng-click="profile.unsubscribe($event ,item.id)">
+							</div>
+						</div>
+						<div class="12u$" ng-show="!profile.user.get('subscriptions').length > 0">
+							<input name="planname" placeholder="Plan name" type="text" value="No subscriptions available" disabled="disabled">
+						</div>
+						<div class="12u$">
+							<h3>Delivery details</h3>
+						</div>
+						<div class="12u">
+							<input name="address" placeholder="Address" type="text" ng-model="profile.address"/>
+						</div>
+						<div class="6u">
+							<input name="city" placeholder="City" type="text" ng-model="profile.city"/>
+						</div>						
+						<div class="6u">
+							<input name="zipcode" placeholder="Zip Code" type="text" ng-model="profile.zipcode"/>
+						</div>
+						<div class="12u">
+							<ul class="actions">
+								<li>
+									<input type="submit" class="special" value="Save address changes" ng-click="profile.saveData($event)" style="margin-top:15px;" />
+								</li>
+							</ul>
+						</div>						
+					</div>
+				</div>			
+		</div>
+	</section>

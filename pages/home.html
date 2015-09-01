@@ -1,0 +1,98 @@
+	<section id="banner">
+		<i class="icon fa-glass"></i>
+		<h3 ng-show="home.isLogged">Welcome {{ home.user.instance.displayName }}</h3>
+		<h2>The best cocktails you've ever made</h2>
+		<p>Premium ingredients and recipes, delivered to your door each month.</p>
+		<ul class="actions">
+			<li><a class="button big special" 
+			ng-show="!home.isLogged"
+			ng-click="home.signUp()">
+			Become a member
+			</a></li>
+			<li><a class="button big special" style="width:340px;margin-bottom:15px;"
+			ng-show="home.isLogged"
+			ui-sref="subscriptions">
+			New subscription
+			</a></li><br>
+			<li><a class="button big special" 
+			style="width:340px;background-color:transparent;text-decoration:underline;" 
+			ng-show="home.isLogged"
+			ui-sref="profile">
+			View your subscriptions
+			</a></li>			
+		</ul>
+	</section>
+
+			<!-- One -->
+	<section id="one" class="wrapper style1">
+		<div class="inner">
+			<article class="feature left">
+				<span class="image"><img src="images/img01.jpg" alt="" /></span>
+				<div class="content">
+					<h2>Premium ingredients, at a great price</h2>
+					<p>We only work with high-quality suppliers so you’ll experience the very best of the cocktail world. You won’t find this stuff in the supermarket.</p>
+				</div>
+			</article>
+			<article class="feature right">
+				<span class="image"><img src="images/img02.jpg" alt="" /></span>
+				<div class="content">
+					<h2>Included in each box</h2>
+					<p>
+					<ul>
+						<li>Great spirits from boutique and world-famous producers.</li>
+						<li>A recipe booklet with easy instructions, tasting notes and the history of each drink.</li>
+						<li>All the premium ingredients you need (except fresh items like fruit or ice).</li>
+					</p>
+				</div>
+			</article>
+		</div>
+	</section>
+
+<!-- Two -->
+	<section id="two" class="wrapper special">
+		<div class="inner">
+			<header class="major narrow">
+				<h2>Amazing cocktails, made easy</h2>
+				<p>If you’ve never mixed a drink before, don’t fret. Our boxes are simple with easy-to-follow recipes — no jargon in sight, and no fancy equipment needed.</p>
+			</header>
+			<div class="image-grid">
+				<a href="#" class="image"><img src="images/cocktails01.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails02.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails03.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails04.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails05.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails07.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails06.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/cocktails08.jpg" alt="" /></a>
+			</div>
+		</div>
+	</section>
+
+<!-- Three -->
+	<section id="three" class="wrapper style3 special">
+		<div class="inner">
+			<header class="major narrow	">
+			<h2>How it works</h2>
+			</header>
+			<article class="feature left">
+				<span class="image"><img src="images/how01.png" alt="" 
+				style="position: inherit;left: 25%;margin-top: 20px;margin-bottom: 20px;" /></span>
+				<div class="content">
+					<p>Our experts create a new box each month, featuring premium ingredients and focussing on a classic cocktail.</p>
+				</div>
+			</article>
+			<article class="feature right">
+				<span class="image"><img src="images/how02.png" alt="" style="position: inherit;left: 25%;margin-top: 20px;margin-bottom: 20px;"/></span>
+				<div class="content">
+					<p>We deliver to your door, for free, every month. You can skip a month or cancel altogether at any point — there's no long-term commitment.</p>
+				</div>
+			</article>
+			<article class="feature left">
+				<span class="image"><img src="images/how03.png" alt="" style="position: inherit;left: 25%;margin-top: 20px;margin-bottom: 20px;"/></span>
+				<div class="content">
+					<p>You've now got everything you need to make five bar-quality drinks at home. Sip, relax and share (or not).</p>
+				</div>
+			</article>
+
+		</div>
+	</section>
