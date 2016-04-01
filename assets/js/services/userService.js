@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-	.module('tutsplus.service')
+	.module('stakepool.service')
 	.factory('userService', ['$q', '$stamplay',
 		function ($q, $stamplay) {
 			var user = $stamplay.User().Model;
