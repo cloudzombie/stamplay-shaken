@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-	.module('tutsplus')
+	.module('stakepool')
 	.controller('profileCtrl', ['$rootScope', 'userService',
 		function ($rootScope, userService) {
 			var profileModel = this;
