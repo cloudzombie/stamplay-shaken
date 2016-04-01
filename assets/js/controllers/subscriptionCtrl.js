@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-	.module('tutsplus')
+	.module('stakepool')
 	.controller('subscriptionCtrl', ['$rootScope', '$location', '$anchorScroll', '$timeout', 'userService',
 		function ($rootScope, $location, $anchorScroll, $timeout, userService) {
 			var subModel = this;
