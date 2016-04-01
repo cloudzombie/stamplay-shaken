@@ -1,10 +1,10 @@
 /*global angular*/
 'use strict';
 
-angular.module('tutsplus', ['tutsplus.service', 'ngRoute', 'ui.router', 'ngStamplay']);
+angular.module('stakepool', ['stakepool.service', 'ngRoute', 'ui.router', 'ngStamplay']);
 
 angular
-	.module('tutsplus')
+	.module('stakepool')
 	.config(function ($stateProvider, $urlRouterProvider) {
 
 		$urlRouterProvider.otherwise('/');
