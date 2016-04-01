@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-	.module('tutsplus')
+	.module('stakepool')
 	.controller('homeCtrl', ['$rootScope', 'userService',
 		function ($rootScope, userService) {
 			var homeModel = this;
