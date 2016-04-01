@@ -1,4 +1,4 @@
 /*global angular*/
 'use strict';
 
-angular.module('tutsplus.service', []);
+angular.module('stakepool.service', []);
